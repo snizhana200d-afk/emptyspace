@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f7f2;
+  color: #263b32;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 8%;
+  background: #fff;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #263b32;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #b88b61;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #263b32;
+  font-size: 14px;
+}
+
+.header-button,
+.main-button {
+  background: #294638;
+  color: white;
+  padding: 14px 22px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.hero {
+  padding: 110px 10%;
+  background: #e9e9df;
+  text-align: center;
+}
+
+.eyebrow {
+  color: #a47c56;
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 58px;
+  line-height: 1.15;
+  margin-bottom: 25px;
+}
+
+.hero h1 span {
+  color: #a47c56;
+}
+
+.hero-text {
+  max-width: 550px;
+  margin: 0 auto 30px;
+  line-height: 1.7;
+  color: #68736b;
+}
+
+.hero-note {
+  margin-top: 35px;
+  font-size: 13px;
+  color: #68736b;
+}
+
+.spaces {
+  padding: 85px 8%;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 35px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+.section-heading > p {
+  color: #777;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.filter {
+  border: 1px solid #d5d8cf;
+  background: transparent;
+  padding: 11px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  color: #294638;
+}
+
+.filter.active,
+.filter:hover {
+  background: #294638;
+  color: white;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.space-card {
+  background: white;
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+.space-image {
+  height: 210px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 75px;
+}
+
+.photo { background: #e7d8c7; }
+.office { background: #d9e2d9; }
+.kitchen { background: #eee0cf; }
+.sport { background: #dce3df; }
+
+.card-info {
+  padding: 25px;
+}
+
+.tag {
+  font-size: 10px;
+  color: #a47c56;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.card-info h3 {
+  margin: 12px 0;
+  font-size: 21px;
+}
+
+.card-info p {
+  color: #777;
+  font-size: 14px;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  gap: 10px;
+}
+
+.card-bottom strong {
+  color: #294638;
+}
+
+.book {
+  border: none;
+  background: #294638;
+  color: white;
+  padding: 11px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.about {
+  padding: 85px 12%;
+  text-align: center;
+  background: #e9e9df;
+}
+
+.about h2 {
+  line-height: 1.4;
+  margin-bottom: 25px;
+}
+
+.about > p:last-child {
+  max-width: 650px;
+  margin: auto;
+  line-height: 1.7;
+  color: #68736b;
+}
+
+.owners {
+  padding: 75px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.owners h2 {
+  max-width: 500px;
+  margin-bottom: 15px;
+}
+
+.owners p:last-child {
+  color: #68736b;
+  line-height: 1.6;
+}
+
+footer {
+  background: #263b32;
+  color: white;
+  padding: 40px 8%;
+  text-align: center;
+}
+
+footer .logo {
+  color: white;
+}
+
+footer p {
+  margin-top: 15px;
+  font-size: 12px;
+  color: #d1d8d1;
+}
+
+@media (max-width: 700px) {
+  .header {
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  nav {
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .header-button {
+    font-size: 12px;
+  }
+
+  .hero {
+    padding: 75px 7%;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .section-heading,
+  .owners {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+}
